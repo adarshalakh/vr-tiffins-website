@@ -1,0 +1,124 @@
+.plans{
+    padding:90px 8%;
+    background:#f8f8f8;
+    text-align:center;
+}
+
+.plans h2{
+    font-size:2.5rem;
+}
+
+.plans-grid{
+
+    margin-top:50px;
+
+    display:grid;
+
+    grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
+
+    gap:35px;
+
+}
+
+.plan-card{
+
+    background:white;
+
+    border-radius:20px;
+
+    padding:40px;
+
+    box-shadow:0 10px 30px rgba(0,0,0,.08);
+
+    position:relative;
+
+}
+
+.badge{
+
+    position:absolute;
+
+    top:20px;
+
+    right:20px;
+
+    background:var(--primary);
+
+    color:white;
+
+    padding:6px 14px;
+
+    border-radius:20px;
+
+    font-size:14px;
+
+}
+
+.plan-card h3{
+
+    margin-bottom:20px;
+
+}
+
+.plan-card h1{
+
+    color:var(--primary);
+
+    margin-bottom:20px;
+
+}
+
+.plan-card p{
+
+    color:#666;
+
+}
+
+.plan-info{
+
+    margin:30px 0;
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:15px;
+
+}
+
+.plan-info div{
+
+    display:flex;
+
+    justify-content:center;
+
+    gap:10px;
+
+}
+
+.plan-btn{
+
+    width:100%;
+    display:block;
+    text-align:center;
+
+    border:none;
+    background:var(--primary);
+    color:white;
+
+    padding:15px;
+    border-radius:12px;
+
+    cursor:pointer;
+    font-size:16px;
+    font-weight:600;
+
+    text-decoration:none;
+
+}
+
+.popular{
+
+    transform:scale(1.03);
+
+}

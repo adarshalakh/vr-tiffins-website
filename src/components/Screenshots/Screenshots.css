@@ -1,0 +1,39 @@
+.screenshots{
+    padding:90px 8%;
+    background:#fff;
+    text-align:center;
+}
+
+.screenshots h2{
+    font-size:2.5rem;
+    margin-bottom:10px;
+}
+
+.screenshots .section-subtitle{
+    color:#666;
+    margin-bottom:50px;
+}
+
+.screen-card{
+
+    padding:15px;
+
+}
+
+.screen-card img{
+
+    width:100%;
+
+    border-radius:25px;
+
+    box-shadow:0 15px 35px rgba(0,0,0,.12);
+
+    transition:.3s;
+
+}
+
+.screen-card img:hover{
+
+    transform:translateY(-10px);
+
+}

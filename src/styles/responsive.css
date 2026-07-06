@@ -1,0 +1,371 @@
+/* ===========================
+   Laptop (1200px)
+=========================== */
+
+@media (max-width:1200px){
+
+.hero{
+    padding:120px 5%;
+}
+
+.features,
+.plans,
+.screenshots,
+.how-it-works,
+.faq,
+.cta,
+.footer{
+    padding-left:5%;
+    padding-right:5%;
+}
+
+.hero h1{
+    font-size:52px;
+}
+
+.phone{
+    width:280px;
+}
+
+}
+
+
+/* ===========================
+   Tablet (992px)
+=========================== */
+
+@media (max-width:992px){
+
+.hero{
+    gap:40px;
+}
+
+.hero h1{
+    font-size:45px;
+}
+
+.phone{
+    width:260px;
+}
+
+.features-grid,
+.plans-grid,
+.steps,
+.footer-container{
+
+    grid-template-columns:repeat(2,1fr);
+
+}
+
+.cta h2{
+
+    font-size:2.4rem;
+
+}
+
+}
+
+
+/* ===========================
+   Mobile (768px)
+=========================== */
+
+@media (max-width:768px){
+
+/* ---------- Hero ---------- */
+
+.hero{
+
+    flex-direction:column;
+
+    text-align:center;
+
+    padding-top:120px;
+
+}
+
+.hero-left{
+
+    order:1;
+
+}
+
+.hero-right{
+
+    display: none;
+
+}
+
+.hero-logo{
+
+    margin:auto;
+    margin-bottom:20px;
+
+}
+
+.hero h1{
+
+    font-size:42px;
+
+}
+
+.hero p{
+
+    max-width:100%;
+
+}
+
+.hero-features{
+
+    align-items:center;
+
+}
+
+.hero-buttons{
+
+    flex-direction:column;
+
+    align-items:center;
+
+}
+
+.primary-btn,
+.secondary-btn{
+
+    width:220px;
+
+}
+
+.phone{
+
+    width:240px;
+
+}
+
+/* ---------- Sections ---------- */
+
+.features,
+.plans,
+.screenshots,
+.how-it-works,
+.faq,
+.cta{
+
+    padding:70px 20px;
+
+}
+
+/* ---------- Cards ---------- */
+
+.features-grid,
+.plans-grid,
+.steps{
+
+    grid-template-columns:1fr;
+
+}
+
+/* ---------- Screens ---------- */
+
+.screen-card img{
+
+    max-width:250px;
+
+    margin:auto;
+
+}
+
+/* ---------- FAQ ---------- */
+
+.faq-question{
+
+    padding:18px;
+
+}
+
+.faq-question h3{
+
+    font-size:17px;
+
+}
+
+/* ---------- CTA ---------- */
+
+.cta h2{
+
+    font-size:2rem;
+
+}
+
+.cta p{
+
+    font-size:16px;
+
+}
+
+.cta-buttons{
+
+    flex-direction:column;
+
+    align-items:center;
+
+}
+
+.download-btn,
+.learn-btn{
+
+    width:240px;
+
+    justify-content:center;
+
+}
+
+/* ---------- Footer ---------- */
+
+.footer{
+
+    text-align:center;
+
+}
+
+.footer-container{
+
+    grid-template-columns:1fr;
+
+}
+
+.social-icons{
+
+    justify-content:center;
+
+}
+
+}
+
+
+/* ===========================
+   Small Mobile (480px)
+=========================== */
+
+@media (max-width:480px){
+
+.logo{
+
+    font-size:24px;
+
+}
+
+.hero{
+
+    padding-top:100px;
+
+}
+
+.hero h1{
+
+    font-size:34px;
+
+}
+
+.tag{
+
+    font-size:15px;
+
+}
+
+.hero p{
+
+    font-size:16px;
+
+}
+
+.hero-features{
+
+    font-size:16px;
+
+}
+
+.phone{
+
+    width:210px;
+
+}
+
+.features h2,
+.plans h2,
+.screenshots h2,
+.how-it-works h2,
+.faq h2{
+
+    font-size:2rem;
+
+}
+
+.feature-card,
+.plan-card,
+.step-card{
+
+    padding:22px;
+
+}
+
+.cta{
+
+    padding:60px 20px;
+
+}
+
+.cta h2{
+
+    font-size:1.7rem;
+
+}
+
+.cta p{
+
+    font-size:15px;
+
+}
+
+.footer{
+
+    padding:60px 20px 20px;
+
+}
+
+}
+
+
+/* ===========================
+   Very Small Mobile (360px)
+=========================== */
+
+@media (max-width:360px){
+
+.hero h1{
+
+    font-size:30px;
+
+}
+
+.phone{
+
+    width:180px;
+
+}
+
+.primary-btn,
+.secondary-btn{
+
+    width:100%;
+
+}
+
+.download-btn,
+.learn-btn{
+
+    width:100%;
+
+}
+
+}

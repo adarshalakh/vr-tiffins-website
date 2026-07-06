@@ -1,0 +1,12 @@
+:root{
+  --primary:#E63946;
+  --primary-light:#FFE8EA;
+  --secondary:#222222;
+  --text:#555;
+  --background:#ffffff;
+  --section:#F8F8F8;
+
+  --radius:18px;
+  --transition:.3s ease;
+  --shadow:0 10px 30px rgba(0,0,0,.08);
+}
