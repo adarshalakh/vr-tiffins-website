@@ -7,6 +7,7 @@ import HowItWorks from "../components/HowItWorks/HowItWorks";
 import FAQ from "../components/FAQ/FAQ";
 import CTA from "../components/CTA/CTA";
 import Footer from "../components/Footer/Footer";
+import PopularMeals from "../components/PopularMeals/PopularMeals";
 
 
 function Home() {
@@ -15,12 +16,13 @@ function Home() {
       <Navbar />
       <Hero />
       <Features />
+      <PopularMeals />
       <Plans />
       <Screenshots />
       <HowItWorks />
       <FAQ />
       <CTA />
-        <Footer />
+      <Footer />
     </>
   );
 }

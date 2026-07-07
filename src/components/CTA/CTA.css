@@ -1,5 +1,9 @@
 .cta{
 
+    position:relative;
+    
+    overflow:hidden;
+    
     padding:100px 8%;
 
     background:linear-gradient(135deg,#E63946,#ff5d6c);
@@ -11,6 +15,10 @@
 }
 
 .cta-content{
+
+    position:relative;
+
+    z-index:5;
 
     max-width:800px;
 
@@ -121,5 +129,81 @@
     font-weight:600;
 
     cursor:pointer;
+
+}
+
+/* ===========================
+   CTA Background Food Images
+=========================== */
+
+.cta-foods{
+
+    position:absolute;
+
+    inset:0;
+
+    pointer-events:none;
+
+}
+
+.cta-food{
+
+    position:absolute;
+
+    object-fit:cover;
+
+    opacity: 0.25;
+
+    filter:none;
+
+    animation:float 6s ease-in-out infinite;
+
+}
+
+/* Top Left */
+
+.cta-food1{
+
+    width:180px;
+    height:180px;
+
+    top:20px;
+    left:30px;
+
+}
+
+/* Top Right */
+
+.cta-food2{
+
+    width:170px;
+    height:170px;
+
+    top:20px;
+    right:30px;
+
+}
+
+/* Bottom Left */
+
+.cta-food3{
+
+    width:180px;
+    height:130px;
+
+    bottom:20px;
+    left:40px;
+
+}
+
+/* Bottom Right */
+
+.cta-food4{
+
+    width:170px;
+    height:170px;
+
+    bottom:20px;
+    right:30px;
 
 }

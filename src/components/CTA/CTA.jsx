@@ -1,9 +1,26 @@
+import paneer from "../../assets/images/paneer.jpg";
+import salad from "../../assets/images/salad.jpeg";
+import bowl from "../../assets/images/bowl.jpeg";
+import thali from "../../assets/images/thali.jpeg";
 import "./CTA.css";
 import { FaGooglePlay, FaArrowRight } from "react-icons/fa";
 
 const CTA = () => {
   return (
     <section className="cta" id="cta">
+
+      <div className="cta-foods">
+
+        <img src={paneer} className="cta-food cta-food1" alt="" />
+
+        <img src={salad} className="cta-food cta-food2" alt="" />
+
+        <img src={thali} className="cta-food cta-food3" alt="" />
+
+        <img src={bowl} className="cta-food cta-food4" alt="" />
+
+      </div>
+
       <div className="cta-content">
 
         <span className="cta-tag">

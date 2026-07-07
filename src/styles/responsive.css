@@ -96,6 +96,12 @@
 
 }
 
+.hero-foods{
+
+    display:none;
+
+}
+
 .hero-logo{
 
     margin:auto;
@@ -217,6 +223,15 @@
     width:240px;
 
     justify-content:center;
+
+}
+
+.cta-food{
+
+    width:90px !important;
+    height:90px !important;
+
+    opacity:.08;
 
 }
 
