@@ -1,0 +1,130 @@
+
+.privacy-overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 9999;
+  background: rgba(0, 0, 0, 0.65);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  backdrop-filter: blur(4px);
+}
+
+.privacy-modal {
+  position: relative;
+  width: min(700px, 100%);
+  height: min(650px, 85vh);
+  background: #fff;
+  border-radius: 24px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.25);
+  animation: privacyPopup 0.25s ease-out;
+}
+
+.privacy-close {
+  position: absolute;
+  top: 15px;
+  right: 18px;
+  z-index: 2;
+  width: 38px;
+  height: 38px;
+  border: none;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.2);
+  color: white;
+  font-size: 28px;
+  cursor: pointer;
+  display: grid;
+  place-items: center;
+}
+
+.privacy-close:hover {
+  background: rgba(255, 255, 255, 0.35);
+}
+
+.privacy-header {
+  flex-shrink: 0;
+  background: linear-gradient(135deg, #e63946, #ff5d6c);
+  color: white;
+  text-align: center;
+  padding: 35px 20px 25px;
+}
+
+.privacy-header h1 {
+  font-size: 2rem;
+  margin: 0 0 8px;
+}
+
+.privacy-header p {
+  margin: 0 0 8px;
+  font-size: 1.1rem;
+}
+
+.privacy-header span {
+  font-size: 0.85rem;
+  opacity: 0.9;
+}
+
+.privacy-content {
+  padding: 25px 35px 35px;
+  overflow-y: auto;
+  flex: 1;
+}
+
+.privacy-content section {
+  margin-bottom: 25px;
+}
+
+.privacy-content h2 {
+  color: #e63946;
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+}
+
+.privacy-content p,
+.privacy-content li {
+  color: #555;
+  font-size: 0.95rem;
+  line-height: 1.7;
+}
+
+.privacy-content ul {
+  padding-left: 22px;
+}
+
+@keyframes privacyPopup {
+  from {
+    opacity: 0;
+    transform: scale(0.92);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@media (max-width: 600px) {
+  .privacy-overlay {
+    padding: 12px;
+  }
+
+  .privacy-modal {
+    height: 85vh;
+    border-radius: 18px;
+  }
+
+  .privacy-header {
+    padding: 30px 15px 20px;
+  }
+
+  .privacy-header h1 {
+    font-size: 1.6rem;
+  }
+
+  .privacy-content {
+    padding: 20px;
+  }
+}

@@ -1,3 +1,4 @@
+import { useState } from "react";
 import Navbar from "../components/Navbar/Navbar";
 import Hero from "../components/Hero/Hero";
 import Features from "../components/Features/Features";
@@ -8,9 +9,11 @@ import FAQ from "../components/FAQ/FAQ";
 import CTA from "../components/CTA/CTA";
 import Footer from "../components/Footer/Footer";
 import PopularMeals from "../components/PopularMeals/PopularMeals";
-
+import PrivacyPolicy from "./PrivacyPolicy";
 
 function Home() {
+  const [showPrivacy, setShowPrivacy] = useState(false);
+
   return (
     <>
       <Navbar />
@@ -22,7 +25,14 @@ function Home() {
       <HowItWorks />
       <FAQ />
       <CTA />
-      <Footer />
+
+      <Footer onPrivacyClick={() => setShowPrivacy(true)} />
+
+      {showPrivacy && (
+        <PrivacyPolicy
+          onClose={() => setShowPrivacy(false)}
+        />
+      )}
     </>
   );
 }

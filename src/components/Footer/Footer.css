@@ -125,3 +125,16 @@
     color:#999;
 
 }
+
+.privacy-link {
+  background: none;
+  border: none;
+  padding: 0;
+  color: inherit;
+  font: inherit;
+  cursor: pointer;
+}
+
+.privacy-link:hover {
+  color: #E63946;
+}
