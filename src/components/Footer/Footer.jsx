@@ -11,7 +11,7 @@ import {
   FaEnvelope,
 } from "react-icons/fa";
 
-const Footer = ({ onPrivacyClick }) => {
+const Footer = () => {
   return (
     <footer className="footer" id="contact">
       <div className="footer-container">
