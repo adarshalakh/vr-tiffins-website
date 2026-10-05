@@ -36,6 +36,9 @@ const Footer = () => {
             <li>
               <Link to="/privacy-policy">Privacy Policy</Link>
             </li>
+            <li>
+              <Link to="/delete-request">Request Account Deletion</Link>
+            </li>
           </ul>
         </div>
 

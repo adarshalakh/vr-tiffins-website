@@ -12,7 +12,7 @@ function SubmitDeleteReq() {
   const [error, setError] = useState("");
 
   const handleDeleteRequest = async () => {
-    if (!userId) {
+   if (!userId) {
       setError("User ID is missing.");
       return;
     }
@@ -22,25 +22,36 @@ function SubmitDeleteReq() {
     setResponse(null);
 
     try {
-      const res = await fetch(
-        "https://e7p4l6r6m2.execute-api.ap-south-1.amazonaws.com/deployment/delete_request_user",
-        {
-          method: "POST",
-          headers: {
-            "Content-Type": "application/json",
-          },
-          body: JSON.stringify({
-            pk: userId,
-          }),
-        }
-      );
+      const res = await fetch("/api/delete-request", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({
+          pk: userId,
+        }),
+      });
 
-      const data = await res.json();
+      const text = await res.text();
+
+      let data;
+
+      try {
+        data = text ? JSON.parse(text) : {};
+      } catch {
+        throw new Error(
+          text || "Server returned an invalid response."
+        );
+      }
+
+      if (!res.ok) {
+        throw new Error(data.message || "Request failed");
+      }
 
       setResponse(data);
     } catch (err) {
-      console.error(err);
-      setError("Something went wrong. Please try again.");
+      console.error("Delete request error:", err);
+      setError(err.message || "Something went wrong. Please try again.");
     } finally {
       setLoading(false);
     }
