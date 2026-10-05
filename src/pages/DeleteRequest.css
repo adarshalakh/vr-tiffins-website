@@ -1,0 +1,81 @@
+.delete-page {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  background: #111;
+}
+
+.delete-card {
+  width: min(600px, 100%);
+  padding: 50px;
+  border: 1px solid #555;
+  border-radius: 18px;
+  background: #151515;
+  color: white;
+  text-align: center;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.35);
+}
+
+.delete-card h1 {
+  margin-bottom: 20px;
+  font-size: 2.2rem;
+}
+
+.delete-description {
+  color: #bbb;
+  line-height: 1.6;
+  margin-bottom: 35px;
+}
+
+.delete-card form {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+}
+
+.delete-card label {
+  margin-bottom: 10px;
+  font-size: 1rem;
+}
+
+.delete-card input {
+  padding: 15px;
+  border: 1px solid #555;
+  border-radius: 8px;
+  background: #222;
+  color: white;
+  font-size: 1rem;
+  outline: none;
+  margin-bottom: 20px;
+}
+
+.delete-card input:focus {
+  border-color: #e63946;
+}
+
+.delete-card button {
+  padding: 15px;
+  border: none;
+  border-radius: 8px;
+  background: #e63946;
+  color: white;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.delete-card button:hover {
+  background: #ff4d5a;
+}
+
+@media (max-width: 600px) {
+  .delete-card {
+    padding: 30px 20px;
+  }
+
+  .delete-card h1 {
+    font-size: 1.8rem;
+  }
+}

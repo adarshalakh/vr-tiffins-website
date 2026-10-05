@@ -1,0 +1,108 @@
+.submit-delete-page {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  background: #111;
+}
+
+.submit-delete-card {
+  width: min(700px, 100%);
+  padding: 50px;
+  border: 1px solid #555;
+  border-radius: 18px;
+  background: #151515;
+  color: white;
+  text-align: center;
+}
+
+.submit-delete-card h1 {
+  margin-bottom: 30px;
+  font-size: 2.2rem;
+}
+
+.warning-text {
+  color: #ddd;
+  font-size: 1.1rem;
+  line-height: 1.6;
+  margin-bottom: 30px;
+}
+
+.user-id-box {
+  padding: 20px;
+  margin-bottom: 25px;
+  border-radius: 10px;
+  background: #222;
+  border: 1px solid #444;
+}
+
+.user-id-box span {
+  display: block;
+  color: #999;
+  margin-bottom: 8px;
+}
+
+.user-id-box strong {
+  font-size: 1.2rem;
+  color: white;
+  word-break: break-all;
+}
+
+.submit-delete-button {
+  width: 100%;
+  padding: 15px;
+  border: none;
+  border-radius: 8px;
+  background: #e63946;
+  color: white;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.submit-delete-button:hover {
+  background: #ff4d5a;
+}
+
+.submit-delete-button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.delete-error {
+  margin-top: 25px;
+  padding: 15px;
+  border-radius: 8px;
+  background: #3a1616;
+  color: #ff7b7b;
+}
+
+.delete-response {
+  margin-top: 30px;
+  text-align: left;
+}
+
+.delete-response h2 {
+  margin-bottom: 12px;
+}
+
+.delete-response pre {
+  padding: 20px;
+  border-radius: 10px;
+  background: #0d0d0d;
+  color: #ddd;
+  overflow-x: auto;
+  white-space: pre-wrap;
+  word-break: break-word;
+}
+
+@media (max-width: 600px) {
+  .submit-delete-card {
+    padding: 30px 20px;
+  }
+
+  .submit-delete-card h1 {
+    font-size: 1.8rem;
+  }
+}
